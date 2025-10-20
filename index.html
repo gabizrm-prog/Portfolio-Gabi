@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Portfólio</title>
+    <meta name="description" content="Esse é um portfólio profissional">
+    <meta name="keywords" content="profissional, portfólio">
+    <meta name="author" content="Gabriela Ramos">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Gabriela</a>
+         <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        </label>
+        <nav>
+            <a href="#" class="active"></a>
+            <a href="#servicos" class="servicos">Serviços</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formacao">Formação</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+ 
+    <section class="home">
+        <div class="home-img">
+            <img src="../Mídia.jpg" alt="Gabriela">
+        </div>
+        <div class="home-content">
+            <h1>Oi! Eu sou a <span>Gabriela</span>!</h1>
+            <h3 class="typing-text">Eu sou <span>estudante de TI</span></h3>
+            <p>Bem-vindo(a) ao meu portfólio! Aqui compartilho meus projetos, aprendizados e experiências na área de tecnologia.</p>
+            <div class="social-icons">
+                <a href="http://www.linkedin.com/in/gabriela-ramos-56186b2b9"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/gabizrm/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#contato" class="btn">Me contrate!</a>
+        </div>
+    </section>
+ 
+    <section id="servicos" class="blocos">
+    <h3><span>Serviços</span></h3>
+    <p> criação de sites, suporte em TI, banco de dados e design.</p>
+    </section>
+ 
+    <section id="habilidades" class="blocos">
+    <h3><span>Habilidades</span></h3>
+    <p>Eu tenho conhecimentos em software, pacote Office, redes de computadores, programação e noções de cibersegurança.Também já trabalhei
+         com banco de dados e desenvolvi interfaces gráficas em Java Swing. Além da parte técnica, me destaco pela comunicação,
+        organização, liderança e capacidade de planejar e trabalhar em equipe. Sou criativa, gosto de aprender coisas novas e tenho
+        facilidade para lidar com pessoas e apresentar ideias.</p>
+    </section>
+ 
+    <section id="formacao" class="blocos">
+    <h3><span>Formação</span></h3>
+    <p>3º ano do curso Técnico em Informática no Senac.</p>
+    </section>
+ 
+    <section id="experiencia" class="blocos">
+    <h3><span>Experiência</span></h3>
+    <p>Busco uma oportunidade como estagiária ou aprendiz na área de Tecnologia da Informação para aplicar e
+    aprimorar os conhecimentos adquiridos no curso técnico do Senac, contribuindo com responsabilidade, proatividade
+     e disposição para aprender.</p>
+    </section>
+ 
+<section id="contato" class="blocos">
+    <h3><span>Contato</span></h3>
+    <div class="contato-form">
+        <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+ 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+ 
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+ 
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+ 
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+        </form>
+
+        <!-- Mensagem de agradecimento exibida após o envio -->
+        <div id="obrigada por enviar!" style="display:none; margin-top:12px; font-weight:700; color:#333;">Obrigado por enviar</div>
+
+        <script>
+          (function(){
+            const form = document.querySelector('.contato-form form');
+            const msg = document.getElementById('obrigada por enviar!');
+            if(!form || !msg) return;
+            form.addEventListener('submit', function(){
+              // abrir envio em nova aba para manter usuário na página e permitir ver a mensagem
+              form.target = '_blank';
+              msg.style.display = 'block';
+            });
+          })();
+        </script>
+     </div>
+</section>
+</body>
+</html>

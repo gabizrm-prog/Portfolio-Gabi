@@ -1,0 +1,204 @@
+/* ===== Importação da fonte ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400;700&display=swap');
+ 
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+/* ===== Estilos gerais ===== */
+body {
+  font-family: 'Special Gothic', sans-serif;
+  font-weight: 400;
+  background: #f7f6f9; /* fundo pastel claro */
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Paleta pastel */
+:root {
+  --roxo-claro: #d7c7ff;
+  --rosa-claro: #ffc9e3;
+  --azul-claro: #cbe8ff;
+  --verde-menta: #d5ffe4;
+  --branco-gelo: #ffffff;
+  --cinza-texto: #444;
+  --cinza-claro: #666;
+}
+ 
+/* ===== Header e navegação ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--roxo-claro);
+  padding: 15px 20px;
+  border-bottom: 2px solid #e2def5;
+}
+ 
+header .logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #333;
+}
+ 
+nav a {
+  text-decoration: none;
+  color: #444;
+  margin-left: 15px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+ 
+nav a:hover {
+  color: #000;
+  font-weight: 700;
+}
+ 
+/* ===== Seção Home ===== */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+ 
+.home-img img {
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+ 
+.home-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+ 
+.home-content h1 span {
+  color: #7f6cff;
+}
+ 
+.typing-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+ 
+.home-content p {
+  color: #555;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+ 
+/* ===== Ícones sociais ===== */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+ 
+.social-icons a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #555;
+  transition: 0.3s;
+}
+ 
+.social-icons a:hover {
+  color: #000;
+}
+ 
+/* Botão principal */
+.btn {
+  background: var(--rosa-claro);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  transition: 0.3s;
+}
+ 
+.btn:hover {
+  background: #ffb6d6;
+}
+ 
+/* ===== Seções (Serviços, etc) ===== */
+.blocos {
+  background: var(--branco-gelo);
+  border-radius: 12px;
+  margin: 30px auto;
+  padding: 25px;
+  width: 85%;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+ 
+.blocos h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #333;
+}
+ 
+.blocos h3 span {
+  color: #7f6cff;
+}
+ 
+.blocos p {
+  color: #555;
+  font-size: 1rem;
+}
+ 
+/* ===== Formulário ===== */
+.contato-form {
+  margin-top: 20px;
+}
+ 
+form {
+  display: grid;
+  gap: 15px;
+}
+ 
+form label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #333;
+}
+ 
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Special Gothic', sans-serif;
+  font-size: 1rem;
+}
+ 
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+ 
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--azul-claro);
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ 
+form button:hover {
+  background: #b1d9ff;
+}
